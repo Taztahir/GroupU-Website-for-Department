@@ -1,30 +1,19 @@
 // Wait for DOM content to load
 document.addEventListener('DOMContentLoaded', () => {
-    // Reveal animations on scroll
-    const observerOptions = {
-        threshold: 0.1
-    };
-
-    const observer = new IntersectionObserver((entries) => {
+    // Intersection Observer for scroll animations
+    const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
+                entry.target.classList.add('active');
             }
         });
-    }, observerOptions);
+    }, { threshold: 0.1 });
 
-    // Apply reveal to hero elements
-    const revealElements = document.querySelectorAll('.hero-title, .hero-subtitle, .apply-btn, .hero-badges');
-    revealElements.forEach((el, index) => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = `all 0.8s cubic-bezier(0.4, 0, 0.2, 1) ${index * 0.15}s`;
-        observer.observe(el);
+    // Observe all elements with the .reveal class
+    document.querySelectorAll('.reveal').forEach(el => {
+        revealObserver.observe(el);
     });
 
-    // Add hover sound effect logic (optional, but premium feel)
-    const buttons = document.querySelectorAll('.apply-btn, .admission-btn');
     // Mobile Menu Toggle
     const menuToggle = document.getElementById('menu-toggle');
     const mainNav = document.getElementById('main-nav');
@@ -39,6 +28,37 @@ document.addEventListener('DOMContentLoaded', () => {
                 icon.setAttribute('data-lucide', 'menu');
             }
             lucide.createIcons();
+        });
+    }
+    // Scroll to Top
+    const scrollTopBtn = document.getElementById('scroll-top');
+    if (scrollTopBtn) {
+        scrollTopBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+    // Contact Form Handling
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const submitBtn = contactForm.querySelector('.submit-btn');
+            const originalText = submitBtn.innerHTML;
+            
+            // Simulate sending
+            submitBtn.innerHTML = 'Sending...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                alert('Thank you for your message! We will get back to you soon.');
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+                contactForm.reset();
+            }, 1500);
         });
     }
 });

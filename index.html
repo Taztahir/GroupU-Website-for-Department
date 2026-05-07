@@ -8,6 +8,7 @@
     <meta name="description"
         content="Eudaimonia University - The most reputed educational institution in Booston. Join us for a world-class education and prestigious career opportunities.">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/LasuedLogo.jpg">
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
@@ -30,8 +31,23 @@
         </div>
 
         <nav class="nav" id="main-nav">
-            <a href="#" class="nav-link active">Home</a>
-            <a href="./Pages/About.html" class="nav-link">About Us</a>
+            <a href="index.html" class="nav-link active">Home</a>
+            <div class="nav-item">
+                <a href="./Pages/About.html" class="nav-link dropdown-toggle">
+                    About Us
+                    <i data-lucide="chevron-down"></i>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="./Pages/WhyUs.html" class="dropdown-link">
+                        <i data-lucide="help-circle"></i>
+                        Why Choose Us
+                    </a>
+                    <a href="./Pages/Gallery.html" class="dropdown-link">
+                        <i data-lucide="image"></i>
+                        Full Gallery
+                    </a>
+                </div>
+            </div>
             <a href="./Pages/Department.html" class="nav-link">Departments</a>
             <a href="./Pages/Blog.html" class="nav-link">Blog</a>
         </nav>
@@ -50,17 +66,17 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-                <p class="hero-subtitle">Meet with #01 University</p>
-                <h1 class="hero-title">
+                <p class="hero-subtitle reveal">Meet with #01 University</p>
+                <h1 class="hero-title reveal">
                     Most reputed educational <span>institution</span> in Lasued
                 </h1>
 
-                <a href="#" class="apply-btn">
+                <a href="#" class="apply-btn reveal">
                     Contact Us
                     <i data-lucide="arrow-up-right"></i>
                 </a>
 
-                <div class="hero-badges">
+                <div class="hero-badges reveal">
                     <div class="badge-item">
                         <img src="https://img.icons8.com/ios/100/6b1221/medal.png" alt="Award Badge" class="badge-icon">
                         <div class="badge-text">Ultimate<br>Winner</div>
@@ -84,9 +100,9 @@
                 <aside class="social-sidebar">
                     <span class="follow-text">Follow Us:</span>
                     <div class="social-links">
-                        <a href="#" class="social-link">TW</a>
-                        <a href="#" class="social-link">FB</a>
-                        <a href="#" class="social-link">BE</a>
+                        <a href="https://x.com/lasued_official" target="_blank" class="social-link">TW</a>
+                        <a href="https://web.facebook.com/lasuedofficial/" target="_blank" class="social-link">FB</a>
+                        <a href="https://www.youtube.com/@LASUEDOfficial" target="_blank" class="social-link">YT</a>
                     </div>
                 </aside>
             </div>
@@ -118,7 +134,7 @@
                     </div>
                 </div>
 
-                <div class="founder-content">
+                <div class="founder-content reveal">
                     <p class="section-subtitle">Since 1990</p>
                     <h2 class="section-title">Message from the main <span>founder</span></h2>
 
@@ -149,6 +165,263 @@
             </div>
         </div>
     </section>
+
+    <section class="why-choose-section" id="why-us">
+        <div class="container">
+            <div class="why-header reveal">
+                <p class="why-subtitle">WHY CHOOSE EUDAIMONIA</p>
+                <h2 class="why-title" style="color: white;">One of the largest, most diverse <span>universities</span>
+                    in the nyc</h2>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-card reveal delay-1">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M32 12L8 24L32 36L56 24L32 12Z" />
+                            <path d="M16 28V40C16 40 24 46 32 46C40 46 48 40 48 40V28" />
+                            <path d="M52 26V36" />
+                            <circle cx="52" cy="38" r="2" />
+                            <rect x="20" y="48" width="24" height="4" rx="1" />
+                        </svg>
+                    </div>
+                    <h3 class="why-card-title">Education Affordability</h3>
+                    <p class="why-card-text">We have focused on generating new knowledge & promoting.</p>
+                    <a href="./Pages/WhyUs.html" class="why-read-more">READ MORE <i
+                            data-lucide="arrow-up-right"></i></a>
+                </div>
+
+                <div class="why-card reveal delay-2">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M42 48C46 45 48 40 48 34C48 24 40 16 30 16C20 16 14 24 14 34C14 40 16 45 20 48" />
+                            <path d="M24 48V54H38V48" />
+                            <circle cx="31" cy="32" r="8" />
+                            <path d="M28 32H34" />
+                            <path d="M31 29V35" />
+                            <path d="M42 48L46 52" />
+                            <path d="M20 48L16 52" />
+                        </svg>
+                    </div>
+                    <h3 class="why-card-title">Core-level academics solutions</h3>
+                    <p class="why-card-text">We have focused on generating new knowledge & promoting.</p>
+                    <a href="./Pages/WhyUs.html" class="why-read-more">READ MORE <i
+                            data-lucide="arrow-up-right"></i></a>
+                </div>
+
+                <div class="why-card reveal delay-3">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="12" y="14" width="40" height="28" rx="2" />
+                            <path d="M20 42V50H44V42" />
+                            <path d="M32 50V54" />
+                            <path d="M24 54H40" />
+                            <path d="M20 22H44" />
+                            <path d="M20 28H44" />
+                            <path d="M20 34H36" />
+                        </svg>
+                    </div>
+                    <h3 class="why-card-title">Inspiring Student Life</h3>
+                    <p class="why-card-text">We have focused on generating new knowledge & promoting.</p>
+                    <a href="#" class="why-read-more">READ MORE <i data-lucide="arrow-up-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-dept-section">
+        <div class="container">
+            <div class="home-dept-header reveal">
+                <p class="home-dept-subtitle">Academic Excellence</p>
+                <h2 class="home-dept-title">Explore Our <span>Departments</span></h2>
+                <div class="home-dept-divider"></div>
+            </div>
+
+            <div class="home-dept-grid">
+                <!-- Dept 1 -->
+                <a href="./Pages/Department.html" class="home-dept-card reveal delay-1">
+                    <div class="home-dept-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=800');">
+                    </div>
+                    <div class="home-dept-content">
+                        <div class="home-dept-icon"><i data-lucide="flask-conical"></i></div>
+                        <h3>Science Education</h3>
+                        <p>Advanced studies in Biology, Chemistry, and Physics with modern laboratory research.</p>
+                    </div>
+                </a>
+
+                <!-- Dept 2 -->
+                <a href="./Pages/Department.html" class="home-dept-card reveal delay-2">
+                    <div class="home-dept-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=800');">
+                    </div>
+                    <div class="home-dept-content">
+                        <div class="home-dept-icon"><i data-lucide="palette"></i></div>
+                        <h3>Arts & Social Sciences</h3>
+                        <p>Exploring languages, history, and social dynamics to prepare future global citizens.</p>
+                    </div>
+                </a>
+
+                <!-- Dept 3 -->
+                <a href="./Pages/Department.html" class="home-dept-card reveal delay-3">
+                    <div class="home-dept-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=800');">
+                    </div>
+                    <div class="home-dept-content">
+                        <div class="home-dept-icon"><i data-lucide="settings"></i></div>
+                        <h3>Vocational Education</h3>
+                        <p>Technical skills and industrial training programs designed for real-world application.</p>
+                    </div>
+                </a>
+
+                <!-- Dept 4 -->
+                <a href="./Pages/Department.html" class="home-dept-card reveal delay-4">
+                    <div class="home-dept-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800');">
+                    </div>
+                    <div class="home-dept-content">
+                        <div class="home-dept-icon"><i data-lucide="briefcase"></i></div>
+                        <h3>Edu Management</h3>
+                        <p>Leadership and administrative excellence for the next generation of academic leaders.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div style="text-align: center; margin-top: var(--space-8);">
+                <a href="./Pages/Department.html" class="apply-btn reveal">
+                    View All Departments
+                    <i data-lucide="arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="gallery-container">
+            <div class="home-dept-header reveal">
+                <p class="home-dept-subtitle">Experience</p>
+                <h2 class="home-dept-title">University <span>Moments</span></h2>
+                <div class="home-dept-divider"></div>
+            </div>
+
+            <!-- Overlapping Hanging Cards -->
+            <div class="gallery-hanging-wrap">
+                <!-- Item 1 -->
+                <div class="hanging-item reveal delay-1">
+                    <img src="./assets/gallery_graduation.png" alt="Graduation Day">
+                    <div class="hanging-content">
+                        <h4>Graduation Day</h4>
+                    </div>
+                </div>
+
+                <!-- Item 2 - The Big Center Card -->
+                <div class="hanging-item reveal">
+                    <img src="./assets/gallery_student_life.png" alt="Student Life">
+                    <div class="hanging-content">
+                        <h4>Campus Community</h4>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="hanging-item reveal delay-2">
+                    <img src="./assets/gallery_lab.png" alt="Research Lab">
+                    <div class="hanging-content">
+                        <h4>Modern Innovation</h4>
+                    </div>
+                </div>
+            </div>
+
+            <a href="./Pages/Gallery.html" class="apply-btn view-gallery-btn reveal">
+                Explore Full Gallery
+                <i data-lucide="camera"></i>
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <!-- About Us -->
+                <div class="footer-col">
+                    <h3 class="footer-title">About LASUED.</h3>
+                    <p class="footer-about-text">
+                        Lagos State University of Education is committed to excellence in teacher education,
+                        innovative research, and community service. We shape the future of education.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://web.facebook.com/lasuedofficial/" target="_blank" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+                        </a>
+                        <a href="https://x.com/lasued_official" target="_blank" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                        </a>
+                        <a href="https://www.youtube.com/@LASUEDOfficial" target="_blank" aria-label="YouTube">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 2-2h15a2 2 0 0 1 2 2 24.12 24.12 0 0 1 0 10 2 2 0 0 1-2 2h-15a2 2 0 0 1-2-2z"></path><path d="m10 15 5-3-5-3z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Navigation.</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="./Pages/About.html">About Us</a></li>
+                        <li><a href="./Pages/WhyUs.html">Why Choose Us</a></li>
+                        <li><a href="./Pages/Gallery.html">Full Gallery</a></li>
+                        <li><a href="./Pages/Department.html">Departments</a></li>
+                        <li><a href="./Pages/Blog.html">News & Blog</a></li>
+                        <li><a href="./Pages/ContactUs.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Get in touch.</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i data-lucide="phone"></i></div>
+                        <div class="contact-info">
+                            <p class="contact-value">+234 805 5577 799</p>
+                            <p class="contact-label">Phone number</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i data-lucide="mail"></i></div>
+                        <div class="contact-info">
+                            <p class="contact-value">info@lasued.edu.ng</p>
+                            <p class="contact-label">Email address</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+                        <div class="contact-info">
+                            <p class="contact-value">Km 30, Badagry Express Way</p>
+                            <p class="contact-label">Oto/Ijanikin, Lagos State</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-logo">
+                    <svg class="logo-icon-footer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                        <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                    </svg>
+                    <span>EUDAIMONIA.</span>
+                </div>
+                <p class="copyright">Copyright & design by @Shtheme 2026, All rights reserved</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
     <script>

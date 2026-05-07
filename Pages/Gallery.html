@@ -4,10 +4,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News & Blog | EUDAIMONIA</title>
+    <title>Gallery | EUDAIMONIA University</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/LasuedLogo.jpg">
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .gallery-hero {
+            height: 40vh;
+            background: linear-gradient(rgba(107, 18, 33, 0.8), rgba(107, 18, 33, 0.8)), url('../assets/gallery_bg.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .gallery-page-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+            padding: var(--space-12) 5%;
+        }
+
+        .gallery-card {
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .gallery-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-card-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: 0.3s ease;
+        }
+
+        .gallery-card:hover .gallery-card-overlay {
+            opacity: 1;
+        }
+
+        .gallery-card-overlay i {
+            color: white;
+            width: 40px;
+            height: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-hero h1 {
+                font-size: 36px !important;
+            }
+
+            .gallery-page-grid {
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+                padding: var(--space-6) 5%;
+            }
+
+            .gallery-card {
+                height: 250px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -38,33 +114,61 @@
                         <i data-lucide="help-circle"></i>
                         Why Choose Us
                     </a>
-                    <a href="Gallery.html" class="dropdown-link">
+                    <a href="Gallery.html" class="dropdown-link active">
                         <i data-lucide="image"></i>
                         Full Gallery
                     </a>
                 </div>
             </div>
             <a href="Department.html" class="nav-link">Departments</a>
-            <a href="Blog.html" class="nav-link active">Blog</a>
+            <a href="Blog.html" class="nav-link">Blog</a>
         </nav>
 
         <div class="header-actions">
-            <a href="ContactUs.html" class="admission-btn">
-                <span>Contact</span>
-                <i data-lucide="arrow-up-right" style="width: 16px;"></i>
-            </a>
+            <button class="search-btn"><i data-lucide="search"></i></button>
+            <a href="ContactUs.html" class="admission-btn">Contact Us</a>
             <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
                 <i data-lucide="menu"></i>
             </button>
         </div>
     </header>
 
-    <main style="min-height: 60vh; padding: 100px 0;">
+    <section class="gallery-hero">
         <div class="container">
-            <h1>Latest News & Academic Blog</h1>
-            <p>Our blog content is being updated. Check back soon for the latest campus news.</p>
+            <h1 style="font-size: 64px;">Institutional Gallery</h1>
+            <p>Capturing the moments that define our excellence</p>
         </div>
-    </main>
+    </section>
+
+    <div class="gallery-page-grid">
+        <div class="gallery-card">
+            <img src="../assets/gallery_bg.png" alt="Campus">
+            <div class="gallery-card-overlay"><i data-lucide="maximize-2"></i></div>
+        </div>
+        <div class="gallery-card">
+            <img src="../assets/gallery_graduation.png" alt="Graduation">
+            <div class="gallery-card-overlay"><i data-lucide="maximize-2"></i></div>
+        </div>
+        <div class="gallery-card">
+            <img src="../assets/gallery_student_life.png" alt="Student Life">
+            <div class="gallery-card-overlay"><i data-lucide="maximize-2"></i></div>
+        </div>
+        <div class="gallery-card">
+            <img src="../assets/gallery_lab.png" alt="Lab">
+            <div class="gallery-card-overlay"><i data-lucide="maximize-2"></i></div>
+        </div>
+        <!-- Placeholder Images -->
+        <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1523050335456-c38a7039028e?auto=format&fit=crop&q=80&w=800"
+                alt="Students">
+            <div class="gallery-card-overlay"><i data-lucide="maximize-2"></i></div>
+        </div>
+        <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1541339907198-e08756ebafe3?auto=format&fit=crop&q=80&w=800"
+                alt="Architecture">
+            <div class="gallery-card-overlay"><i data-lucide="maximize-2"></i></div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="container">
@@ -149,7 +253,6 @@
         </div>
     </footer>
 
-    <script src="../script.js"></script>
     <script>
         lucide.createIcons();
     </script>

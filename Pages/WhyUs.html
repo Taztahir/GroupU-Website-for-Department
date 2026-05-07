@@ -4,10 +4,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News & Blog | EUDAIMONIA</title>
+    <title>Why Us | EUDAIMONIA University</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/LasuedLogo.jpg">
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .why-hero {
+            height: 50vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/gallery_bg.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .why-content-section {
+            padding: var(--space-12) 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .why-feature-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 60px;
+            margin-top: 60px;
+            align-items: center;
+        }
+
+        .why-feature-image {
+            height: 500px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+        }
+
+        .why-feature-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .why-feature-text h2 {
+            font-size: 42px;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 24px;
+            color: var(--text-main);
+        }
+
+        .why-feature-text p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--text-light);
+            margin-bottom: 32px;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 20px;
+            font-weight: 500;
+            color: var(--text-main);
+        }
+
+        .feature-list li i {
+            color: var(--primary);
+            margin-top: 4px;
+        }
+
+        @media (max-width: 768px) {
+            .why-hero h1 {
+                font-size: 42px !important;
+            }
+
+            .why-feature-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                margin-top: 40px;
+            }
+
+            .why-feature-grid:nth-child(even) {
+                flex-direction: column-reverse;
+                display: flex;
+            }
+
+            .why-feature-image {
+                height: 300px;
+            }
+
+            .why-feature-text h2 {
+                font-size: 28px;
+            }
+
+            .why-feature-text p {
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -29,12 +132,12 @@
         <nav class="nav" id="main-nav">
             <a href="../index.html" class="nav-link">Home</a>
             <div class="nav-item">
-                <a href="About.html" class="nav-link dropdown-toggle">
+                <a href="About.html" class="nav-link active dropdown-toggle">
                     About Us
                     <i data-lucide="chevron-down"></i>
                 </a>
                 <div class="dropdown-menu">
-                    <a href="WhyUs.html" class="dropdown-link">
+                    <a href="WhyUs.html" class="dropdown-link active">
                         <i data-lucide="help-circle"></i>
                         Why Choose Us
                     </a>
@@ -45,26 +148,62 @@
                 </div>
             </div>
             <a href="Department.html" class="nav-link">Departments</a>
-            <a href="Blog.html" class="nav-link active">Blog</a>
+            <a href="Blog.html" class="nav-link">Blog</a>
         </nav>
 
         <div class="header-actions">
-            <a href="ContactUs.html" class="admission-btn">
-                <span>Contact</span>
-                <i data-lucide="arrow-up-right" style="width: 16px;"></i>
-            </a>
+            <button class="search-btn"><i data-lucide="search"></i></button>
+            <a href="ContactUs.html" class="admission-btn">Contact Us</a>
             <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
                 <i data-lucide="menu"></i>
             </button>
         </div>
     </header>
 
-    <main style="min-height: 60vh; padding: 100px 0;">
+    <section class="why-hero">
         <div class="container">
-            <h1>Latest News & Academic Blog</h1>
-            <p>Our blog content is being updated. Check back soon for the latest campus news.</p>
+            <h1 style="font-size: 64px; font-family: 'Playfair Display', serif;">Why Eudaimonia?</h1>
+            <p style="font-size: 20px; max-width: 700px; margin: 20px auto;">Discover the excellence, diversity, and
+                innovation that makes us a world-class institution.</p>
         </div>
-    </main>
+    </section>
+
+    <div class="why-content-section">
+        <div class="why-feature-grid">
+            <div class="why-feature-image">
+                <img src="../assets/gallery_student_life.png" alt="Students">
+            </div>
+            <div class="why-feature-text">
+                <h2>Academic Excellence & Global Recognition</h2>
+                <p>At Eudaimonia, we don't just teach; we inspire. Our curriculum is designed to challenge the status
+                    quo and foster critical thinking in every student.</p>
+                <ul class="feature-list">
+                    <li><i data-lucide="check-circle"></i> World-class faculty from top global institutions</li>
+                    <li><i data-lucide="check-circle"></i> State-of-the-art research laboratories and libraries</li>
+                    <li><i data-lucide="check-circle"></i> Strong industry partnerships for internship and placement
+                    </li>
+                    <li><i data-lucide="check-circle"></i> Diverse student body from over 50 countries</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="why-feature-grid" style="margin-top: 100px;">
+            <div class="why-feature-text">
+                <h2>Innovative Learning Environment</h2>
+                <p>We believe that learning happens best in a vibrant, supportive community. Our campus is equipped with
+                    everything a student needs to succeed academically and personally.</p>
+                <ul class="feature-list">
+                    <li><i data-lucide="check-circle"></i> Smart classrooms with interactive technology</li>
+                    <li><i data-lucide="check-circle"></i> 24/7 access to digital resources and archives</li>
+                    <li><i data-lucide="check-circle"></i> Modern sports complexes and recreational hubs</li>
+                    <li><i data-lucide="check-circle"></i> Comprehensive mental health and career support</li>
+                </ul>
+            </div>
+            <div class="why-feature-image">
+                <img src="../assets/gallery_lab.png" alt="Lab">
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="container">
@@ -149,7 +288,6 @@
         </div>
     </footer>
 
-    <script src="../script.js"></script>
     <script>
         lucide.createIcons();
     </script>
