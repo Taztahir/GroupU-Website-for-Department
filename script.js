@@ -14,26 +14,81 @@ document.addEventListener('DOMContentLoaded', () => {
         revealObserver.observe(el);
     });
 
-    // Mobile Menu Toggle
+    // Navigation and Mobile Menu
+    const header = document.querySelector('.header');
     const menuToggle = document.getElementById('menu-toggle');
     const mainNav = document.getElementById('main-nav');
+    const navOverlay = document.getElementById('nav-overlay');
     
-    if (menuToggle && mainNav) {
-        menuToggle.addEventListener('click', () => {
-            mainNav.classList.toggle('active');
-            const icon = menuToggle.querySelector('i');
-            if (mainNav.classList.contains('active')) {
-                icon.setAttribute('data-lucide', 'x');
-            } else {
-                icon.setAttribute('data-lucide', 'menu');
-            }
-            lucide.createIcons();
-        });
+    // Toggle Mobile Menu
+    function toggleMenu() {
+        mainNav.classList.toggle('active');
+        navOverlay.classList.toggle('active');
+        document.body.style.overflow = mainNav.classList.contains('active') ? 'hidden' : '';
+        
+        const icon = menuToggle.querySelector('i');
+        if (mainNav.classList.contains('active')) {
+            icon.setAttribute('data-lucide', 'x');
+        } else {
+            icon.setAttribute('data-lucide', 'menu');
+        }
+        lucide.createIcons();
     }
-    // Scroll to Top
-    const scrollTopBtn = document.getElementById('scroll-top');
-    if (scrollTopBtn) {
-        scrollTopBtn.addEventListener('click', (e) => {
+
+    if (menuToggle && mainNav) {
+        menuToggle.addEventListener('click', toggleMenu);
+    }
+
+    if (navOverlay) {
+        navOverlay.addEventListener('click', toggleMenu);
+    }
+
+    // Mobile Dropdown Toggle
+    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+    dropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', (e) => {
+            if (window.innerWidth <= 991) {
+                e.preventDefault();
+                e.stopPropagation(); // Prevent closing the menu
+                const parent = toggle.parentElement;
+                parent.classList.toggle('active');
+            }
+        });
+    });
+
+    // Close menu when clicking on a link (mobile) - excluding dropdown toggles
+    document.querySelectorAll('.nav-link:not(.dropdown-toggle)').forEach(link => {
+        link.addEventListener('click', () => {
+            if (mainNav.classList.contains('active')) {
+                toggleMenu();
+            }
+        });
+    });
+
+    // Header scroll effect & Back to Top visibility
+    window.addEventListener('scroll', () => {
+        // Header effect
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+
+        // Back to Top button
+        const backToTopBtn = document.getElementById('backToTop');
+        if (backToTopBtn) {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('active');
+            } else {
+                backToTopBtn.classList.remove('active');
+            }
+        }
+    });
+
+    // Back to Top Button
+    const backToTopBtn = document.getElementById('backToTop');
+    if (backToTopBtn) {
+        backToTopBtn.addEventListener('click', (e) => {
             e.preventDefault();
             window.scrollTo({
                 top: 0,
@@ -41,6 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
     // Contact Form Handling
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
@@ -60,5 +116,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 contactForm.reset();
             }, 1500);
         });
+    }
+
+    // Initialize Lucide icons on page load
+    if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
     }
 });

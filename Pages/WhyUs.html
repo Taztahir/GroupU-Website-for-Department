@@ -4,127 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Why Us | EUDAIMONIA University</title>
+    <title>Why Choose Us | EUDAIMONIA University</title>
+    <meta name="description" content="Discover why EUDAIMONIA University is the premier choice for education excellence in Lagos State.">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="WhyUs.css">
     <link rel="icon" type="image/x-icon" href="../assets/LasuedLogo.jpg">
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <style>
-        .why-hero {
-            height: 50vh;
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/gallery_bg.png');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-        }
-
-        .why-content-section {
-            padding: var(--space-12) 5%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .why-feature-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 60px;
-            margin-top: 60px;
-            align-items: center;
-        }
-
-        .why-feature-image {
-            height: 500px;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
-        }
-
-        .why-feature-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .why-feature-text h2 {
-            font-size: 42px;
-            font-family: 'Playfair Display', serif;
-            margin-bottom: 24px;
-            color: var(--text-main);
-        }
-
-        .why-feature-text p {
-            font-size: 18px;
-            line-height: 1.8;
-            color: var(--text-light);
-            margin-bottom: 32px;
-        }
-
-        .feature-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .feature-list li {
-            display: flex;
-            align-items: flex-start;
-            gap: 15px;
-            margin-bottom: 20px;
-            font-weight: 500;
-            color: var(--text-main);
-        }
-
-        .feature-list li i {
-            color: var(--primary);
-            margin-top: 4px;
-        }
-
-        @media (max-width: 768px) {
-            .why-hero h1 {
-                font-size: 42px !important;
-            }
-
-            .why-feature-grid {
-                grid-template-columns: 1fr;
-                gap: 30px;
-                margin-top: 40px;
-            }
-
-            .why-feature-grid:nth-child(even) {
-                flex-direction: column-reverse;
-                display: flex;
-            }
-
-            .why-feature-image {
-                height: 300px;
-            }
-
-            .why-feature-text h2 {
-                font-size: 28px;
-            }
-
-            .why-feature-text p {
-                font-size: 16px;
-            }
-        }
-    </style>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 
 <body>
     <header class="header">
         <div class="logo">
             <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 21h18" />
-                <path d="M3 7v1a3 3 0 0 0 6 0V7" />
-                <path d="M9 7v1a3 3 0 0 0 6 0V7" />
-                <path d="M15 7v1a3 3 0 0 0 6 0V7" />
-                <path d="M19 21v-4a2 2 0 0 1 2-2H3a2 2 0 0 1 2 2v4" />
-                <path d="M2 7h20" />
-                <path d="M12 2 7 7h10L12 2Z" />
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 21h18" /><path d="M3 7v1a3 3 0 0 0 6 0V7" /><path d="M9 7v1a3 3 0 0 0 6 0V7" /><path d="M15 7v1a3 3 0 0 0 6 0V7" /><path d="M19 21v-4a2 2 0 0 1 2-2H3a2 2 0 0 1 2 2v4" /><path d="M2 7h20" /><path d="M12 2 7 7h10L12 2Z" />
             </svg>
             EUDAIMONIA.
         </div>
@@ -132,7 +25,7 @@
         <nav class="nav" id="main-nav">
             <a href="../index.html" class="nav-link">Home</a>
             <div class="nav-item">
-                <a href="About.html" class="nav-link active dropdown-toggle">
+                <a href="About.html" class="nav-link dropdown-toggle active">
                     About Us
                     <i data-lucide="chevron-down"></i>
                 </a>
@@ -148,148 +41,315 @@
                 </div>
             </div>
             <a href="Department.html" class="nav-link">Departments</a>
-            <a href="Blog.html" class="nav-link">Blog</a>
+            <a href="ContactUs.html" class="nav-link mobile-only">Contact</a>
         </nav>
 
         <div class="header-actions">
-            <button class="search-btn"><i data-lucide="search"></i></button>
-            <a href="ContactUs.html" class="admission-btn">Contact Us</a>
+            <a href="ContactUs.html" class="admission-btn">
+                <span>Contact</span>
+                <i data-lucide="arrow-up-right" style="width: 16px;"></i>
+            </a>
             <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
                 <i data-lucide="menu"></i>
             </button>
         </div>
     </header>
 
-    <section class="why-hero">
-        <div class="container">
-            <h1 style="font-size: 64px; font-family: 'Playfair Display', serif;">Why Eudaimonia?</h1>
-            <p style="font-size: 20px; max-width: 700px; margin: 20px auto;">Discover the excellence, diversity, and
-                innovation that makes us a world-class institution.</p>
-        </div>
-    </section>
+    <div class="nav-overlay" id="nav-overlay"></div>
 
-    <div class="why-content-section">
-        <div class="why-feature-grid">
-            <div class="why-feature-image">
-                <img src="../assets/gallery_student_life.png" alt="Students">
+    <main>
+        <!-- Hero -->
+        <section class="wu-hero">
+            <div class="container">
+                <h1>Why Choose Us</h1>
+                <div class="breadcrumbs">
+                    <a href="../index.html">Home</a>
+                    <span>/</span>
+                    Why Us
+                </div>
             </div>
-            <div class="why-feature-text">
-                <h2>Academic Excellence & Global Recognition</h2>
-                <p>At Eudaimonia, we don't just teach; we inspire. Our curriculum is designed to challenge the status
-                    quo and foster critical thinking in every student.</p>
-                <ul class="feature-list">
-                    <li><i data-lucide="check-circle"></i> World-class faculty from top global institutions</li>
-                    <li><i data-lucide="check-circle"></i> State-of-the-art research laboratories and libraries</li>
-                    <li><i data-lucide="check-circle"></i> Strong industry partnerships for internship and placement
-                    </li>
-                    <li><i data-lucide="check-circle"></i> Diverse student body from over 50 countries</li>
-                </ul>
-            </div>
-        </div>
+        </section>
 
-        <div class="why-feature-grid" style="margin-top: 100px;">
-            <div class="why-feature-text">
-                <h2>Innovative Learning Environment</h2>
-                <p>We believe that learning happens best in a vibrant, supportive community. Our campus is equipped with
-                    everything a student needs to succeed academically and personally.</p>
-                <ul class="feature-list">
-                    <li><i data-lucide="check-circle"></i> Smart classrooms with interactive technology</li>
-                    <li><i data-lucide="check-circle"></i> 24/7 access to digital resources and archives</li>
-                    <li><i data-lucide="check-circle"></i> Modern sports complexes and recreational hubs</li>
-                    <li><i data-lucide="check-circle"></i> Comprehensive mental health and career support</li>
-                </ul>
+        <!-- Stats Counter -->
+        <section class="wu-stats">
+            <div class="container">
+                <div class="wu-stats-grid">
+                    <div class="wu-stat reveal">
+                        <span class="wu-stat-number">7,000+</span>
+                        <span class="wu-stat-label">Graduates</span>
+                    </div>
+                    <div class="wu-stat reveal delay-1">
+                        <span class="wu-stat-number">150+</span>
+                        <span class="wu-stat-label">Faculty Members</span>
+                    </div>
+                    <div class="wu-stat reveal delay-2">
+                        <span class="wu-stat-number">25+</span>
+                        <span class="wu-stat-label">Years of Excellence</span>
+                    </div>
+                    <div class="wu-stat reveal delay-3">
+                        <span class="wu-stat-number">95%</span>
+                        <span class="wu-stat-label">Employment Rate</span>
+                    </div>
+                </div>
             </div>
-            <div class="why-feature-image">
-                <img src="../assets/gallery_lab.png" alt="Lab">
+        </section>
+
+        <!-- Feature Sections -->
+        <section class="wu-features">
+            <div class="container">
+                <article class="wu-feature reveal">
+                    <div class="wu-feature-img">
+                        <img src="https://images.unsplash.com/photo-1523050335456-c38a7039028e?auto=format&fit=crop&q=80&w=800" alt="Academic Excellence">
+                    </div>
+                    <div class="wu-feature-text">
+                        <span class="wu-feature-tag">01</span>
+                        <h2>Academic Excellence</h2>
+                        <p>Our curriculum is designed to challenge and inspire, led by world-class faculty who are leaders in their respective fields. We provide a rigorous academic environment that prepares students for the complexities of the modern world.</p>
+                        <ul class="wu-feature-list">
+                            <li><i data-lucide="check-circle"></i> Internationally recognized degree programs</li>
+                            <li><i data-lucide="check-circle"></i> Research-driven teaching methodology</li>
+                            <li><i data-lucide="check-circle"></i> Small class sizes for personalized learning</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="wu-feature wu-feature--reverse reveal">
+                    <div class="wu-feature-img">
+                        <img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=800" alt="Modern Infrastructure">
+                    </div>
+                    <div class="wu-feature-text">
+                        <span class="wu-feature-tag">02</span>
+                        <h2>Modern Infrastructure</h2>
+                        <p>From state-of-the-art laboratories to high-tech classrooms and a digital library, we provide the tools you need to succeed. Our campus is built for the 21st-century learner.</p>
+                        <ul class="wu-feature-list">
+                            <li><i data-lucide="check-circle"></i> Smart classrooms with interactive tech</li>
+                            <li><i data-lucide="check-circle"></i> Fully equipped science laboratories</li>
+                            <li><i data-lucide="check-circle"></i> High-speed campus-wide WiFi</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="wu-feature reveal">
+                    <div class="wu-feature-img">
+                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800" alt="Expert Faculty">
+                    </div>
+                    <div class="wu-feature-text">
+                        <span class="wu-feature-tag">03</span>
+                        <h2>Expert Faculty &amp; Mentorship</h2>
+                        <p>Our lecturers are not just teachers &mdash; they are published researchers, industry consultants, and passionate mentors who invest in every student's success.</p>
+                        <ul class="wu-feature-list">
+                            <li><i data-lucide="check-circle"></i> PhD-qualified faculty across departments</li>
+                            <li><i data-lucide="check-circle"></i> One-on-one academic advising</li>
+                            <li><i data-lucide="check-circle"></i> Industry partnerships for real-world exposure</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="wu-feature wu-feature--reverse reveal">
+                    <div class="wu-feature-img">
+                        <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&q=80&w=800" alt="Vibrant Campus Life">
+                    </div>
+                    <div class="wu-feature-text">
+                        <span class="wu-feature-tag">04</span>
+                        <h2>Vibrant Campus Life</h2>
+                        <p>Education goes beyond the classroom. Our campus is alive with student clubs, cultural festivals, sporting events, and leadership programs that shape well-rounded graduates.</p>
+                        <ul class="wu-feature-list">
+                            <li><i data-lucide="check-circle"></i> 30+ student-led organizations</li>
+                            <li><i data-lucide="check-circle"></i> Annual inter-university competitions</li>
+                            <li><i data-lucide="check-circle"></i> Community outreach &amp; volunteer programs</li>
+                        </ul>
+                    </div>
+                </article>
             </div>
-        </div>
-    </div>
+        </section>
+
+        <!-- Testimonials Carousel -->
+        <section class="wu-testimonials">
+            <div class="container">
+                <div class="wu-section-header reveal">
+                    <p class="wu-section-tag">TESTIMONIALS</p>
+                    <h2>What Our Students Say</h2>
+                </div>
+                <div class="wu-carousel" id="testimonialCarousel">
+                    <div class="wu-carousel-track" id="carouselTrack">
+                        <blockquote class="wu-testimonial">
+                            <div class="wu-testimonial-quote"><i data-lucide="quote"></i></div>
+                            <p>"EUDAIMONIA gave me the foundation I needed. The lecturers go above and beyond, and the community is incredibly supportive."</p>
+                            <footer>
+                                <strong>Adaobi N.</strong>
+                                <span>Science Education, Class of 2024</span>
+                            </footer>
+                        </blockquote>
+                        <blockquote class="wu-testimonial">
+                            <div class="wu-testimonial-quote"><i data-lucide="quote"></i></div>
+                            <p>"The practical approach to learning here sets it apart. I was job-ready before I even graduated, thanks to the mentorship programs."</p>
+                            <footer>
+                                <strong>Emeka O.</strong>
+                                <span>Vocational Education, Class of 2023</span>
+                            </footer>
+                        </blockquote>
+                        <blockquote class="wu-testimonial">
+                            <div class="wu-testimonial-quote"><i data-lucide="quote"></i></div>
+                            <p>"From the modern facilities to the passionate faculty, every aspect of this university is designed to help students succeed."</p>
+                            <footer>
+                                <strong>Fatimah A.</strong>
+                                <span>Arts &amp; Social Sciences, Class of 2025</span>
+                            </footer>
+                        </blockquote>
+                        <blockquote class="wu-testimonial">
+                            <div class="wu-testimonial-quote"><i data-lucide="quote"></i></div>
+                            <p>"The research opportunities here are unmatched. I published my first paper in my third year &mdash; something I never thought possible."</p>
+                            <footer>
+                                <strong>Tunde B.</strong>
+                                <span>Educational Management, Class of 2024</span>
+                            </footer>
+                        </blockquote>
+                        <blockquote class="wu-testimonial">
+                            <div class="wu-testimonial-quote"><i data-lucide="quote"></i></div>
+                            <p>"EUDAIMONIA didn't just give me a degree &mdash; it gave me a network, a purpose, and the confidence to lead. I'm forever grateful."</p>
+                            <footer>
+                                <strong>Chidinma E.</strong>
+                                <span>Computer Science Education, Class of 2023</span>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div class="wu-carousel-controls">
+                        <button class="wu-carousel-btn" id="carouselPrev" aria-label="Previous testimonial">
+                            <i data-lucide="chevron-left"></i>
+                        </button>
+                        <div class="wu-carousel-dots" id="carouselDots"></div>
+                        <button class="wu-carousel-btn" id="carouselNext" aria-label="Next testimonial">
+                            <i data-lucide="chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="wu-cta reveal">
+            <div class="container">
+                <h2>Ready to Join the EUDAIMONIA Family?</h2>
+                <p>Take the first step toward a transformative education experience.</p>
+                <a href="ContactUs.html" class="wu-cta-btn">Get In Touch <i data-lucide="arrow-right"></i></a>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer">
         <div class="container">
-            <div class="footer-top">
-                <!-- About Us -->
-                <div class="footer-col">
-                    <h3 class="footer-title">About LASUED.</h3>
-                    <p class="footer-about-text">
-                        Lagos State University of Education is committed to excellence in teacher education,
-                        innovative research, and community service. We shape the future of education.
-                    </p>
-                    <div class="footer-social">
-                        <a href="https://web.facebook.com/lasuedofficial/" target="_blank" aria-label="Facebook">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-                        </a>
-                        <a href="#" aria-label="Instagram">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
-                        </a>
-                        <a href="https://x.com/lasued_official" target="_blank" aria-label="Twitter">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
-                        </a>
-                        <a href="https://www.youtube.com/@LASUEDOfficial" target="_blank" aria-label="YouTube">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 2-2h15a2 2 0 0 1 2 2 24.12 24.12 0 0 1 0 10 2 2 0 0 1-2 2h-15a2 2 0 0 1-2-2z"></path><path d="m10 15 5-3-5-3z"></path></svg>
-                        </a>
+            <div class="footer-main">
+                <div class="footer-col brand-col">
+                    <div class="footer-logo">
+                        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M3 21h18" /><path d="M3 7v1a3 3 0 0 0 6 0V7" /><path d="M9 7v1a3 3 0 0 0 6 0V7" /><path d="M15 7v1a3 3 0 0 0 6 0V7" /><path d="M19 21v-4a2 2 0 0 1 2-2H3a2 2 0 0 1 2 2v4" /><path d="M2 7h20" /><path d="M12 2 7 7h10L12 2Z" />
+                        </svg>
+                        <span>EUDAIMONIA.</span>
+                    </div>
+                    <p class="footer-description">Lagos State University of Education is dedicated to fostering academic excellence, innovative research, and the development of future leaders in education.</p>
+                    <div class="social-links-premium">
+                        <a href="https://web.facebook.com/lasuedofficial/" target="_blank" class="social-item" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                        <a href="https://x.com/lasued_official" target="_blank" class="social-item" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /></svg></a>
+                        <a href="#" class="social-item" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+                        <a href="https://www.youtube.com/@LASUEDOfficial" target="_blank" class="social-item" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17z"/><path d="m10 15 5-3-5-3z"/></svg></a>
                     </div>
                 </div>
-
-                <!-- Navigation -->
                 <div class="footer-col">
-                    <h3 class="footer-title">Navigation.</h3>
-                    <ul class="footer-links">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-nav-list">
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="About.html">About Us</a></li>
                         <li><a href="WhyUs.html">Why Choose Us</a></li>
                         <li><a href="Gallery.html">Full Gallery</a></li>
-                        <li><a href="Department.html">Departments</a></li>
-                        <li><a href="Blog.html">News & Blog</a></li>
-                        <li><a href="ContactUs.html">Contact Us</a></li>
                     </ul>
                 </div>
-
-                <!-- Contact -->
                 <div class="footer-col">
-                    <h3 class="footer-title">Get in touch.</h3>
-                    <div class="contact-item">
-                        <div class="contact-icon"><i data-lucide="phone"></i></div>
-                        <div class="contact-info">
-                            <p class="contact-value">+234 805 5577 799</p>
-                            <p class="contact-label">Phone number</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon"><i data-lucide="mail"></i></div>
-                        <div class="contact-info">
-                            <p class="contact-value">info@lasued.edu.ng</p>
-                            <p class="contact-label">Email address</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon"><i data-lucide="map-pin"></i></div>
-                        <div class="contact-info">
-                            <p class="contact-value">Km 30, Badagry Express Way</p>
-                            <p class="contact-label">Oto/Ijanikin, Lagos State</p>
-                        </div>
+                    <h4 class="footer-heading">Academic</h4>
+                    <ul class="footer-nav-list">
+                        <li><a href="Department.html">Departments</a></li>
+                        <li><a href="#">Admissions</a></li>
+                        <li><a href="#">Scholarships</a></li>
+                        <li><a href="#">Academic Calendar</a></li>
+                        <li><a href="#">Student Portal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <div class="contact-info-premium">
+                        <div class="contact-card"><i data-lucide="map-pin"></i><p>Km 30, Badagry Express Way, Oto/Ijanikin, Lagos State</p></div>
+                        <div class="contact-card"><i data-lucide="phone"></i><p>+234 805 5577 799</p></div>
+                        <div class="contact-card"><i data-lucide="mail"></i><p>info@lasued.edu.ng</p></div>
                     </div>
                 </div>
             </div>
-
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="footer-logo">
-                    <svg class="logo-icon-footer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
-                        <path d="M6 12v5c3 3 9 3 12 0v-5" />
-                    </svg>
-                    <span>EUDAIMONIA.</span>
+            <div class="footer-bottom-premium">
+                <p class="copyright">&copy; 2026 EUDAIMONIA. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
                 </div>
-                <p class="copyright">Copyright & design by @Shtheme 2026, All rights reserved</p>
             </div>
         </div>
     </footer>
 
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <script src="../script.js"></script>
     <script>
-        lucide.createIcons();
+        // Testimonial Carousel
+        const track = document.getElementById('carouselTrack');
+        const slides = track.querySelectorAll('.wu-testimonial');
+        const dotsContainer = document.getElementById('carouselDots');
+        const prevBtn = document.getElementById('carouselPrev');
+        const nextBtn = document.getElementById('carouselNext');
+        let currentIndex = 0;
+        let autoPlayTimer;
+
+        // Create dots
+        slides.forEach((_, i) => {
+            const dot = document.createElement('button');
+            dot.classList.add('wu-dot');
+            dot.setAttribute('aria-label', 'Go to testimonial ' + (i + 1));
+            if (i === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goToSlide(i));
+            dotsContainer.appendChild(dot);
+        });
+
+        const dots = dotsContainer.querySelectorAll('.wu-dot');
+
+        function goToSlide(index) {
+            currentIndex = index;
+            track.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
+            dots.forEach((d, i) => d.classList.toggle('active', i === currentIndex));
+            resetAutoPlay();
+        }
+
+        function nextSlide() {
+            goToSlide((currentIndex + 1) % slides.length);
+        }
+
+        function prevSlide() {
+            goToSlide((currentIndex - 1 + slides.length) % slides.length);
+        }
+
+        nextBtn.addEventListener('click', nextSlide);
+        prevBtn.addEventListener('click', prevSlide);
+
+        // Auto-play
+        function resetAutoPlay() {
+            clearInterval(autoPlayTimer);
+            autoPlayTimer = setInterval(nextSlide, 5000);
+        }
+        resetAutoPlay();
+
+        // Pause on hover
+        const carousel = document.getElementById('testimonialCarousel');
+        carousel.addEventListener('mouseenter', () => clearInterval(autoPlayTimer));
+        carousel.addEventListener('mouseleave', resetAutoPlay);
     </script>
 </body>
 
