@@ -31,6 +31,10 @@
     -webkit-font-smoothing: antialiased;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     color: var(--text-main);
@@ -582,21 +586,26 @@ img {
         position: fixed;
         top: 0;
         right: 0;
-        width: 320px;
+        width: min(320px, 85vw);
+        max-width: 100vw;
         height: 100vh;
+        height: 100dvh;
         background: #0f1115;
         padding: 100px var(--space-4) var(--space-4);
         gap: 0;
         transform: translateX(100%);
-        opacity: 1;
-        visibility: visible;
-        transition: transform 0.6s cubic-bezier(0.85, 0, 0.15, 1);
+        visibility: hidden;
+        transition: transform 0.6s cubic-bezier(0.85, 0, 0.15, 1),
+                    visibility 0s linear 0.6s;
         z-index: 1000;
         box-shadow: -20px 0 60px rgba(0, 0, 0, 0.5);
     }
 
     .nav.active {
         transform: translateX(0);
+        visibility: visible;
+        transition: transform 0.6s cubic-bezier(0.85, 0, 0.15, 1),
+                    visibility 0s linear 0s;
     }
 
     .nav-link {
@@ -644,7 +653,7 @@ img {
         overflow: hidden;
         opacity: 1;
         visibility: visible;
-        transform: none !important; /* Force reset inherited desktop transform */
+        transform: none !important;
         left: auto !important;
         top: auto !important;
         background: rgba(255, 255, 255, 0.05);
@@ -653,6 +662,7 @@ img {
         padding: 0;
         transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         border-radius: 0;
+        min-width: 0;
     }
 
     .nav-item.active .dropdown-menu {
@@ -673,7 +683,12 @@ img {
 
     .dropdown-link:hover {
         background: transparent;
-        color: white;
+        color: white !important;
+        padding-left: 40px;
+    }
+
+    .dropdown-link::before {
+        display: none;
     }
 
     .dropdown-toggle i {
@@ -741,49 +756,7 @@ img {
     }
 
     .admission-btn {
-        display: none; /* Hide on small screens to save space */
-    }
-
-    .nav-item {
-        width: 100%;
-    }
-
-    .dropdown-toggle {
-        justify-content: space-between;
-        padding: 16px 0;
-        font-size: 22px;
-        font-weight: 800;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    }
-
-    .dropdown-menu {
-        position: static;
-        width: 100%;
-        opacity: 1;
-        visibility: visible;
-        transform: none;
-        box-shadow: none;
-        background: rgba(107, 18, 33, 0.02);
-        padding: 0 0 0 var(--space-4);
-        margin-top: 0;
         display: none;
-        border-radius: 0;
-        border: none;
-    }
-
-    .nav-item:hover .dropdown-menu {
-        display: block;
-    }
-
-    .dropdown-link {
-        padding: 14px 0;
-        font-size: 18px;
-        font-weight: 600;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.03);
-    }
-
-    .dropdown-link:last-child {
-        border-bottom: none;
     }
 
     .menu-toggle {
