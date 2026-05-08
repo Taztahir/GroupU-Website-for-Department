@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COSED - College of Science Education | LASUED University</title>
+    <meta name="description" content="Explore the College of Science Education (COSED) at LASUED. Departments include Chemistry, Physics, Biology, Mathematics, and Human Kinetics & Health Education.">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="CollegeDetail.css">
+    <link rel="icon" type="image/x-icon" href="../assets/LasuedLogo.jpg">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 21h18" /><path d="M3 7v1a3 3 0 0 0 6 0V7" /><path d="M9 7v1a3 3 0 0 0 6 0V7" />
+                <path d="M15 7v1a3 3 0 0 0 6 0V7" /><path d="M19 21v-4a2 2 0 0 1 2-2H3a2 2 0 0 1 2 2v4" />
+                <path d="M2 7h20" /><path d="M12 2 7 7h10L12 2Z" />
+            </svg>
+            LASUED.
+        </div>
+        <nav class="nav" id="main-nav">
+            <a href="../index.html" class="nav-link">Home</a>
+            <div class="nav-item">
+                <a href="About.html" class="nav-link dropdown-toggle">About Us <i data-lucide="chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="WhyUs.html" class="dropdown-link"><i data-lucide="help-circle"></i> Why Choose Us</a>
+                    <a href="Gallery.html" class="dropdown-link"><i data-lucide="image"></i> Full Gallery</a>
+                </div>
+            </div>
+            <a href="Department.html" class="nav-link active">Colleges</a>
+            <a href="Team.html" class="nav-link">Our Team</a>
+            <a href="ContactUs.html" class="nav-link mobile-only">Contact</a>
+        </nav>
+        <div class="header-actions">
+            <a href="ContactUs.html" class="admission-btn"><span>Contact</span><i data-lucide="arrow-up-right" style="width:16px;"></i></a>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu"><i data-lucide="menu"></i></button>
+        </div>
+    </header>
+    <div class="nav-overlay" id="nav-overlay"></div>
+
+    <main>
+        <!-- Hero -->
+        <section class="college-hero" style="background-image: url('https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=2000');">
+            <div class="container">
+                <span class="college-tag">COSED</span>
+                <h1>College of Science Education</h1>
+                <div class="breadcrumbs">
+                    <a href="../index.html">Home</a>
+                    <span style="margin: 0 10px; opacity: 0.5;">/</span>
+                    <a href="Department.html">Colleges</a>
+                    <span style="margin: 0 10px; opacity: 0.5;">/</span>
+                    COSED
+                </div>
+            </div>
+        </section>
+
+        <!-- Overview -->
+        <section class="college-overview">
+            <div class="container">
+                <div class="overview-grid">
+                    <div class="overview-content reveal">
+                        <h2>Advancing <span>Scientific Knowledge</span> Through Education</h2>
+                        <p>The College of Science Education (COSED) is one of the foremost colleges at LASUED, dedicated to producing skilled educators and researchers in the core sciences. The college combines rigorous academic instruction with practical laboratory experiences to prepare graduates who can teach, innovate, and lead in the scientific community.</p>
+                        <p>COSED offers both B.Sc. and B.Sc.(Ed.) degree programmes, ensuring that graduates are equipped not only with deep subject matter expertise but also with the pedagogical skills required to inspire the next generation of scientists and thinkers.</p>
+                    </div>
+                    <div class="overview-image reveal delay-1">
+                        <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&q=80&w=800" alt="Students conducting science experiments in laboratory">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Departments -->
+        <section class="college-departments">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Our Departments</h2>
+                    <p>Five specialised departments offering world-class programmes in Science Education.</p>
+                </div>
+                <div class="departments-grid">
+                    <article class="department-card reveal delay-1">
+                        <div class="card-icon"><i data-lucide="flask-conical"></i></div>
+                        <h3>Chemistry</h3>
+                        <p>Offers B.Sc. Chemistry and B.Sc.(Ed.) Chemistry. Focus on organic, inorganic, and physical chemistry with strong laboratory training.</p>
+                    </article>
+                    <article class="department-card reveal delay-2">
+                        <div class="card-icon"><i data-lucide="atom"></i></div>
+                        <h3>Physics</h3>
+                        <p>Offers B.Sc. Physics and B.Sc.(Ed.) Physics. Studies mechanics, electromagnetism, thermodynamics, and modern physics applications.</p>
+                    </article>
+                    <article class="department-card reveal delay-3">
+                        <div class="card-icon"><i data-lucide="leaf"></i></div>
+                        <h3>Natural Science</h3>
+                        <p>Offers B.Sc. Biology, B.Sc.(Ed.) Biology, and B.Sc.(Ed.) Integrated Science. Covers botany, zoology, ecology, and life sciences.</p>
+                    </article>
+                    <article class="department-card reveal delay-1">
+                        <div class="card-icon"><i data-lucide="sigma"></i></div>
+                        <h3>Mathematics Education</h3>
+                        <p>Offers B.Sc. Mathematics, B.Sc.(Ed.) Mathematics, B.Sc. Statistics, and B.Sc.(Ed.) Statistics. Develops analytical and quantitative skills.</p>
+                    </article>
+                    <article class="department-card reveal delay-2">
+                        <div class="card-icon"><i data-lucide="heart-pulse"></i></div>
+                        <h3>Human Kinetics &amp; Health Education</h3>
+                        <p>Offers B.Sc.(Ed.) Human Kinetics and B.Sc.(Ed.) Health Education. Focuses on physical fitness, sports science, and public health promotion.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Careers -->
+        <section class="college-careers">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Career Pathways</h2>
+                    <p>COSED graduates enjoy diverse career opportunities across education, research, industry, and public service.</p>
+                </div>
+                <div class="careers-grid">
+                    <div class="career-category reveal delay-1">
+                        <h3><i data-lucide="graduation-cap"></i> Education &amp; Teaching</h3>
+                        <ul class="career-list">
+                            <li>Secondary School Science Teacher</li>
+                            <li>University Lecturer / Tutor</li>
+                            <li>Teacher Educator &amp; Trainer</li>
+                            <li>School Administrator</li>
+                            <li>Private Tutoring &amp; Coaching</li>
+                        </ul>
+                    </div>
+                    <div class="career-category reveal delay-2">
+                        <h3><i data-lucide="building-2"></i> Public Service &amp; Government</h3>
+                        <ul class="career-list">
+                            <li>Civil Service / Government Ministries</li>
+                            <li>Education Officer</li>
+                            <li>Public Health Educator</li>
+                            <li>Science Policy Advisor</li>
+                        </ul>
+                    </div>
+                    <div class="career-category reveal delay-3">
+                        <h3><i data-lucide="briefcase"></i> Private Sector &amp; Industry</h3>
+                        <ul class="career-list">
+                            <li>Laboratory Technician / Analyst</li>
+                            <li>Pharmaceutical Sales &amp; Research</li>
+                            <li>Data Analyst / Statistician</li>
+                            <li>Educational Technology Consultant</li>
+                            <li>Sports Coach &amp; Fitness Specialist</li>
+                        </ul>
+                    </div>
+                    <div class="career-category reveal delay-1">
+                        <h3><i data-lucide="rocket"></i> Further Development</h3>
+                        <ul class="career-list">
+                            <li>Postgraduate Studies (M.Sc., Ph.D.)</li>
+                            <li>Scientific Research Fellow</li>
+                            <li>Entrepreneurship (Private Schools)</li>
+                            <li>EdTech Startup Founder</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="college-cta reveal">
+            <div class="container">
+                <h2>Ready to Explore Science?</h2>
+                <p>Join the College of Science Education and build a career that transforms lives through scientific discovery.</p>
+                <div class="cta-btn-group">
+                    <a href="ContactUs.html" class="cta-btn">Apply Now</a>
+                    <a href="Department.html" class="cta-btn-outline">View All Colleges</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-col brand-col">
+                    <div class="footer-logo">
+                        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M3 21h18" /><path d="M3 7v1a3 3 0 0 0 6 0V7" /><path d="M9 7v1a3 3 0 0 0 6 0V7" /><path d="M15 7v1a3 3 0 0 0 6 0V7" /><path d="M19 21v-4a2 2 0 0 1 2-2H3a2 2 0 0 1 2 2v4" /><path d="M2 7h20" /><path d="M12 2 7 7h10L12 2Z" />
+                        </svg>
+                        <span>LASUED.</span>
+                    </div>
+                    <p class="footer-description">Lagos State University of Education is dedicated to fostering academic excellence, innovative research, and the development of future leaders in education.</p>
+                    <div class="social-links-premium">
+                        <a href="https://web.facebook.com/lasuedofficial/" target="_blank" class="social-item" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                        <a href="https://x.com/lasued_official" target="_blank" class="social-item" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /></svg></a>
+                        <a href="#" class="social-item" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+                        <a href="https://www.youtube.com/@LASUEDOfficial" target="_blank" class="social-item" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17z"/><path d="m10 15 5-3-5-3z"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-nav-list">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="WhyUs.html">Why Choose Us</a></li>
+                        <li><a href="Gallery.html">Full Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Academic</h4>
+                    <ul class="footer-nav-list">
+                        <li><a href="Department.html">Colleges</a></li>
+                        <li><a href="#">Admissions</a></li>
+                        <li><a href="#">Scholarships</a></li>
+                        <li><a href="#">Academic Calendar</a></li>
+                        <li><a href="#">Student Portal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <div class="contact-info-premium">
+                        <div class="contact-card"><i data-lucide="map-pin"></i><p>Km 30, Badagry Express Way, Oto/Ijanikin, Lagos State</p></div>
+                        <div class="contact-card"><i data-lucide="phone"></i><p>+234 805 5577 799</p></div>
+                        <div class="contact-card"><i data-lucide="mail"></i><p>info@lasued.edu.ng</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-premium">
+                <p class="copyright">&copy; 2026 LASUED. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i data-lucide="arrow-up"></i></button>
+    <script src="../script.js"></script>
+</body>
+</html>

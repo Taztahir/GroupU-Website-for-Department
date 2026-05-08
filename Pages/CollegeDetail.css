@@ -1,0 +1,403 @@
+/* College Detail Page Styles */
+
+/* Hero */
+.college-hero {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.college-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(107, 18, 33, 0.85), rgba(107, 18, 33, 0.92));
+}
+
+.college-hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.college-hero .college-tag {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    padding: 8px 24px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    margin-bottom: var(--space-3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.college-hero h1 {
+    font-size: 52px;
+    margin-bottom: var(--space-2);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.college-hero .breadcrumbs {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.college-hero .breadcrumbs a {
+    color: white;
+    opacity: 0.7;
+    transition: var(--transition);
+}
+
+.college-hero .breadcrumbs a:hover {
+    opacity: 1;
+}
+
+/* Overview Section */
+.college-overview {
+    padding: var(--space-12) 0;
+    background: var(--bg-white);
+}
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+    align-items: start;
+}
+
+.overview-content h2 {
+    font-size: 42px;
+    margin-bottom: var(--space-3);
+}
+
+.overview-content h2 span {
+    color: var(--primary);
+}
+
+.overview-content p {
+    color: var(--text-muted);
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: var(--space-3);
+}
+
+.overview-image {
+    border-radius: 8px;
+    overflow: hidden;
+    height: 400px;
+    position: relative;
+}
+
+.overview-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.overview-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Departments Section */
+.college-departments {
+    padding: var(--space-12) 0;
+    background: var(--bg-light);
+}
+
+.college-departments .section-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto var(--space-8);
+}
+
+.college-departments .section-header h2 {
+    font-size: 42px;
+    margin-bottom: var(--space-2);
+}
+
+.college-departments .section-header p {
+    color: var(--text-muted);
+    font-size: 16px;
+}
+
+.departments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-4);
+}
+
+.department-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: var(--space-4);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.department-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 0;
+    background: var(--primary);
+    transition: height 0.4s ease;
+}
+
+.department-card:hover::before {
+    height: 100%;
+}
+
+.department-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    border-color: var(--primary);
+}
+
+.department-card .card-icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(107, 18, 33, 0.08);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--space-3);
+    color: var(--primary);
+}
+
+.department-card .card-icon i {
+    width: 24px;
+    height: 24px;
+}
+
+.department-card h3 {
+    font-size: 20px;
+    margin-bottom: var(--space-1);
+    font-family: 'Playfair Display', serif;
+}
+
+.department-card p {
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Careers Section */
+.college-careers {
+    padding: var(--space-12) 0;
+    background: var(--bg-white);
+}
+
+.college-careers .section-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto var(--space-8);
+}
+
+.college-careers .section-header h2 {
+    font-size: 42px;
+    margin-bottom: var(--space-2);
+}
+
+.college-careers .section-header p {
+    color: var(--text-muted);
+    font-size: 16px;
+}
+
+.careers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-4);
+}
+
+.career-category {
+    background: var(--bg-light);
+    border-radius: 8px;
+    padding: var(--space-4);
+    border: 1px solid var(--border);
+    transition: var(--transition);
+}
+
+.career-category:hover {
+    border-color: var(--primary);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.career-category h3 {
+    font-size: 18px;
+    margin-bottom: var(--space-2);
+    font-family: 'Playfair Display', serif;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+}
+
+.career-category h3 i {
+    width: 20px;
+    height: 20px;
+}
+
+.career-list {
+    list-style: none;
+    padding: 0;
+}
+
+.career-list li {
+    position: relative;
+    padding: 8px 0 8px 24px;
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.5;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.career-list li:last-child {
+    border-bottom: none;
+}
+
+.career-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    background: var(--primary);
+    border-radius: 50%;
+    opacity: 0.4;
+}
+
+/* CTA Section - reuse from dept */
+.college-cta {
+    padding: var(--space-12) 0;
+    background: var(--primary);
+    color: white;
+    text-align: center;
+}
+
+.college-cta h2 {
+    font-size: 48px;
+    margin-bottom: var(--space-3);
+}
+
+.college-cta p {
+    font-size: 18px;
+    margin-bottom: var(--space-6);
+    opacity: 0.9;
+}
+
+.college-cta .cta-btn-group {
+    display: flex;
+    gap: var(--space-3);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.college-cta .cta-btn {
+    background: white;
+    color: var(--primary);
+    padding: 18px 40px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: var(--transition);
+}
+
+.college-cta .cta-btn:hover {
+    background: var(--bg-light);
+    transform: translateY(-3px);
+}
+
+.college-cta .cta-btn-outline {
+    border: 2px solid white;
+    color: white;
+    padding: 16px 38px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: var(--transition);
+}
+
+.college-cta .cta-btn-outline:hover {
+    background: white;
+    color: var(--primary);
+    transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .college-hero h1 {
+        font-size: 42px;
+    }
+
+    .overview-content h2,
+    .college-departments .section-header h2,
+    .college-careers .section-header h2 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .college-hero {
+        height: 320px;
+    }
+
+    .college-hero h1 {
+        font-size: 32px;
+    }
+
+    .overview-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+
+    .overview-image {
+        height: 300px;
+    }
+
+    .overview-content h2 {
+        font-size: 32px;
+    }
+
+    .college-departments .section-header h2,
+    .college-careers .section-header h2 {
+        font-size: 30px;
+    }
+
+    .departments-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .careers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .college-cta h2 {
+        font-size: 32px;
+    }
+
+    .college-cta .cta-btn-group {
+        flex-direction: column;
+        align-items: center;
+    }
+}
