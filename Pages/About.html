@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | LASUED University</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="CollegeDetail.css">
+    <link rel="icon" type="image/x-icon" href="../assets/LasuedLogo.jpg">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 21h18" />
+                <path d="M3 7v1a3 3 0 0 0 6 0V7" />
+                <path d="M9 7v1a3 3 0 0 0 6 0V7" />
+                <path d="M15 7v1a3 3 0 0 0 6 0V7" />
+                <path d="M19 21v-4a2 2 0 0 1 2-2H3a2 2 0 0 1 2 2v4" />
+                <path d="M2 7h20" />
+                <path d="M12 2 7 7h10L12 2Z" />
+            </svg>
+            LASUED.
+        </div>
+
+        <nav class="nav" id="main-nav">
+            <a href="../index.html" class="nav-link">Home</a>
+            <div class="nav-item">
+                <a href="About.html" class="nav-link dropdown-toggle active">
+                    About Us
+                    <i data-lucide="chevron-down"></i>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="WhyUs.html" class="dropdown-link">
+                        <i data-lucide="help-circle"></i>
+                        Why Choose Us
+                    </a>
+                    <a href="Gallery.html" class="dropdown-link">
+                        <i data-lucide="image"></i>
+                        Full Gallery
+                    </a>
+                </div>
+            </div>
+            <a href="Department.html" class="nav-link">Colleges</a>
+            <a href="Team.html" class="nav-link">Our Team</a>
+            <a href="ContactUs.html" class="nav-link mobile-only">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <a href="ContactUs.html" class="admission-btn">
+                <span>Contact</span>
+                <i data-lucide="arrow-up-right" style="width: 16px;"></i>
+            </a>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="nav-overlay" id="nav-overlay"></div>
+
+    <main>
+        <!-- Hero -->
+        <section class="college-hero"
+            style="background-image: url('https://images.unsplash.com/photo-1541339907198-e08756ebafe3?auto=format&fit=crop&q=80&w=2000'); height: 380px;">
+            <div class="container" style="position: relative; z-index: 1; text-align: center; color: white;">
+                <h1 style="font-size: 52px; font-family: 'Playfair Display', serif; margin-bottom: 16px;">About LASUED
+                </h1>
+                <div class="breadcrumbs" style="font-size: 14px; opacity: 0.8;">
+                    <a href="../index.html" style="color: white; opacity: 0.7;">Home</a>
+                    <span style="margin: 0 10px; opacity: 0.5;">/</span>
+                    About Us
+                </div>
+            </div>
+        </section>
+
+        <!-- Overview -->
+        <section style="padding: 96px 0; background: var(--bg-white);">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;">
+                    <div class="reveal">
+                        <p
+                            style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: var(--primary); margin-bottom: 16px;">
+                            Our Story</p>
+                        <h2 style="font-size: 42px; font-family: 'Playfair Display', serif; margin-bottom: 24px;">Lagos
+                            State University of <span style="color: var(--primary);">Education</span></h2>
+                        <p style="font-size: 16px; line-height: 1.8; color: var(--text-muted); margin-bottom: 16px;">
+                            Lagos State University of Education (LASUED) was established by the Lagos State Government
+                            to address the growing demand for qualified teachers and education professionals in Nigeria.
+                            The university was carved out of the former Adeniran Ogunsanya College of Education (AOCOED)
+                            and granted full university status.
+                        </p>
+                        <p style="font-size: 16px; line-height: 1.8; color: var(--text-muted); margin-bottom: 16px;">
+                            LASUED is structured into 8 specialised colleges offering B.Sc., B.A., and B.Ed. degree
+                            programmes that produce competent educators, researchers, and professionals equipped to
+                            transform Nigeria's education landscape and beyond.
+                        </p>
+                        <p style="font-size: 16px; line-height: 1.8; color: var(--text-muted);">
+                            Located along the Badagry Expressway in Oto/Ijanikin, Lagos State, the university serves as
+                            a hub for academic excellence, innovative research, and community development.
+                        </p>
+                    </div>
+                    <div class="reveal delay-1"
+                        style="border-radius: 16px; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.1); height: 460px;">
+                        <img src="https://images.unsplash.com/photo-1541339907198-e08756ebafe3?auto=format&fit=crop&q=80&w=800"
+                            alt="LASUED Campus" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Vision -->
+        <section style="padding: 96px 0; background: var(--bg-light);">
+            <div class="container">
+                <div style="text-align: center; max-width: 700px; margin: 0 auto 64px;">
+                    <h2 style="font-size: 42px; font-family: 'Playfair Display', serif; margin-bottom: 16px;"
+                        class="reveal">Our Mission &amp; <span style="color: var(--primary);">Vision</span></h2>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px;">
+                    <div class="reveal delay-1"
+                        style="background: white; border: 1px solid var(--border); border-radius: 8px; padding: 48px; transition: var(--transition);">
+                        <div
+                            style="width: 56px; height: 56px; background: rgba(107,18,33,0.08); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; color: var(--primary);">
+                            <i data-lucide="target" style="width: 28px; height: 28px;"></i>
+                        </div>
+                        <h3 style="font-size: 24px; font-family: 'Playfair Display', serif; margin-bottom: 16px;">Our
+                            Mission</h3>
+                        <p style="color: var(--text-muted); line-height: 1.8; font-size: 15px;">To produce highly
+                            skilled, competent, and morally upright graduates through quality teaching, research, and
+                            community service. LASUED is committed to training educators who will drive innovation,
+                            foster critical thinking, and advance knowledge across all disciplines.</p>
+                    </div>
+                    <div class="reveal delay-2"
+                        style="background: white; border: 1px solid var(--border); border-radius: 8px; padding: 48px; transition: var(--transition);">
+                        <div
+                            style="width: 56px; height: 56px; background: rgba(107,18,33,0.08); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; color: var(--primary);">
+                            <i data-lucide="eye" style="width: 28px; height: 28px;"></i>
+                        </div>
+                        <h3 style="font-size: 24px; font-family: 'Playfair Display', serif; margin-bottom: 16px;">Our
+                            Vision</h3>
+                        <p style="color: var(--text-muted); line-height: 1.8; font-size: 15px;">To be a world-class
+                            university of education, recognised for excellence in teacher training, academic research,
+                            and the holistic development of individuals who will positively impact society and drive
+                            sustainable national development.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats -->
+        <section style="padding: 80px 0; background: var(--primary); color: white;">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; text-align: center;">
+                    <div class="reveal">
+                        <p class="counter" style="font-size: 48px; font-weight: 800; margin-bottom: 8px;">8</p>
+                        <p style="font-size: 14px; text-transform: uppercase; letter-spacing: 2px; opacity: 0.8;">
+                            Colleges</p>
+                    </div>
+                    <div class="reveal delay-1">
+                        <p class="counter" style="font-size: 48px; font-weight: 800; margin-bottom: 8px;">30+</p>
+                        <p style="font-size: 14px; text-transform: uppercase; letter-spacing: 2px; opacity: 0.8;">
+                            Departments</p>
+                    </div>
+                    <div class="reveal delay-2">
+                        <p class="counter" style="font-size: 48px; font-weight: 800; margin-bottom: 8px;">150+</p>
+                        <p style="font-size: 14px; text-transform: uppercase; letter-spacing: 2px; opacity: 0.8;">
+                            Faculty Members</p>
+                    </div>
+                    <div class="reveal delay-3">
+                        <p class="counter" style="font-size: 48px; font-weight: 800; margin-bottom: 8px;">10K+</p>
+                        <p style="font-size: 14px; text-transform: uppercase; letter-spacing: 2px; opacity: 0.8;">
+                            Students</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Values -->
+        <section style="padding: 96px 0; background: var(--bg-white);">
+            <div class="container">
+                <div style="text-align: center; max-width: 700px; margin: 0 auto 64px;">
+                    <h2 style="font-size: 42px; font-family: 'Playfair Display', serif; margin-bottom: 16px;"
+                        class="reveal">Our Core <span style="color: var(--primary);">Values</span></h2>
+                    <p style="color: var(--text-muted); font-size: 16px;" class="reveal">The principles that guide
+                        everything we do at LASUED.</p>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px;">
+                    <div class="reveal delay-1"
+                        style="text-align: center; padding: 40px 24px; border: 1px solid var(--border); border-radius: 8px; transition: var(--transition);">
+                        <i data-lucide="award"
+                            style="width: 40px; height: 40px; color: var(--primary); margin-bottom: 16px;"></i>
+                        <h4 style="font-size: 18px; margin-bottom: 8px; font-family: 'Playfair Display', serif;">
+                            Excellence</h4>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6;">We pursue the highest
+                            standards in teaching, research, and community service.</p>
+                    </div>
+                    <div class="reveal delay-2"
+                        style="text-align: center; padding: 40px 24px; border: 1px solid var(--border); border-radius: 8px; transition: var(--transition);">
+                        <i data-lucide="shield-check"
+                            style="width: 40px; height: 40px; color: var(--primary); margin-bottom: 16px;"></i>
+                        <h4 style="font-size: 18px; margin-bottom: 8px; font-family: 'Playfair Display', serif;">
+                            Integrity</h4>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6;">Transparency, honesty,
+                            and ethical conduct are the foundation of our institution.</p>
+                    </div>
+                    <div class="reveal delay-3"
+                        style="text-align: center; padding: 40px 24px; border: 1px solid var(--border); border-radius: 8px; transition: var(--transition);">
+                        <i data-lucide="lightbulb"
+                            style="width: 40px; height: 40px; color: var(--primary); margin-bottom: 16px;"></i>
+                        <h4 style="font-size: 18px; margin-bottom: 8px; font-family: 'Playfair Display', serif;">
+                            Innovation</h4>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6;">We embrace creative
+                            solutions and modern approaches to education and research.</p>
+                    </div>
+                    <div class="reveal delay-1"
+                        style="text-align: center; padding: 40px 24px; border: 1px solid var(--border); border-radius: 8px; transition: var(--transition);">
+                        <i data-lucide="users"
+                            style="width: 40px; height: 40px; color: var(--primary); margin-bottom: 16px;"></i>
+                        <h4 style="font-size: 18px; margin-bottom: 8px; font-family: 'Playfair Display', serif;">
+                            Community</h4>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6;">We foster a sense of
+                            belonging, mutual respect, and collaboration among all stakeholders.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section style="padding: 96px 0; background: var(--primary); color: white; text-align: center;">
+            <div class="container reveal">
+                <h2 style="font-size: 48px; font-family: 'Playfair Display', serif; margin-bottom: 24px;">Join the
+                    LASUED Community</h2>
+                <p style="font-size: 18px; margin-bottom: 48px; opacity: 0.9;">Explore our 8 colleges and discover the
+                    programme that matches your passion.</p>
+                <div style="display: flex; gap: 24px; justify-content: center; flex-wrap: wrap;">
+                    <a href="Department.html"
+                        style="background: white; color: var(--primary); padding: 18px 40px; font-size: 14px; font-weight: 700; text-transform: uppercase; display: inline-block; transition: var(--transition);">Explore
+                        Colleges</a>
+                    <a href="ContactUs.html"
+                        style="border: 2px solid white; color: white; padding: 16px 38px; font-size: 14px; font-weight: 700; text-transform: uppercase; display: inline-block; transition: var(--transition);">Contact
+                        Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <!-- Column 1: Brand -->
+                <div class="footer-col brand-col">
+                    <div class="footer-logo">
+                        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M3 21h18" />
+                            <path d="M3 7v1a3 3 0 0 0 6 0V7" />
+                            <path d="M9 7v1a3 3 0 0 0 6 0V7" />
+                            <path d="M15 7v1a3 3 0 0 0 6 0V7" />
+                            <path d="M19 21v-4a2 2 0 0 1 2-2H3a2 2 0 0 1 2 2v4" />
+                            <path d="M2 7h20" />
+                            <path d="M12 2 7 7h10L12 2Z" />
+                        </svg>
+                        <span>LASUED.</span>
+                    </div>
+                    <p class="footer-description">
+                        Lagos State University of Education is dedicated to fostering academic excellence, innovative
+                        research, and the development of future leaders in education.
+                    </p>
+                    <div class="social-links-premium">
+                        <a href="https://web.facebook.com/lasuedofficial/" target="_blank" class="social-item"
+                            aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide-icon">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg>
+                        </a>
+                        <a href="https://x.com/lasued_official" target="_blank" class="social-item"
+                            aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide-icon">
+                                <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                                <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-item" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide-icon">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/@LASUEDOfficial" target="_blank" class="social-item"
+                            aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide-icon">
+                                <path
+                                    d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17z" />
+                                <path d="m10 15 5-3-5-3z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-nav-list">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="WhyUs.html">Why Choose Us</a></li>
+                        <li><a href="Gallery.html">Full Gallery</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Academic -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Academic</h4>
+                    <ul class="footer-nav-list">
+                        <li><a href="Department.html">Colleges</a></li>
+                        <li><a href="#">Admissions</a></li>
+                        <li><a href="#">Scholarships</a></li>
+                        <li><a href="#">Academic Calendar</a></li>
+                        <li><a href="#">Student Portal</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <div class="contact-info-premium">
+                        <div class="contact-card">
+                            <i data-lucide="map-pin"></i>
+                            <p>Km 30, Badagry Express Way, Oto/Ijanikin, Lagos State</p>
+                        </div>
+                        <div class="contact-card">
+                            <i data-lucide="phone"></i>
+                            <p>+234 805 5577 799</p>
+                        </div>
+                        <div class="contact-card">
+                            <i data-lucide="mail"></i>
+                            <p>info@lasued.edu.ng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom-premium">
+                <p class="copyright">&copy; 2026 LASUED. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

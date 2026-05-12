@@ -1,8 +1,9 @@
 /* Contact Page Specific Styles */
 .contact-hero {
     height: 350px;
-    background:
-        url('https://images.unsplash.com/photo-1523050853064-dbad323b7ff3?auto=format&fit=crop&q=80&w=2000');
+    background: 
+        linear-gradient(rgba(1, 39, 88, 0.85), rgba(1, 39, 88, 0.92)),
+        url('../assets/contact_hero.png');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -11,7 +12,6 @@
     justify-content: center;
     color: white;
     text-align: center;
-    background-color: #641320;
 }
 
 .contact-hero h1 {
@@ -69,13 +69,13 @@
 
 .info-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(107, 18, 33, 0.1);
+    box-shadow: 0 15px 40px rgba(1, 39, 88, 0.1);
 }
 
 .info-icon {
     width: 60px;
     height: 60px;
-    background: rgba(107, 18, 33, 0.05);
+    background: rgba(1, 39, 88, 0.05);
     color: var(--primary);
     display: flex;
     align-items: center;
@@ -150,7 +150,7 @@
 .form-control:focus {
     outline: none;
     border-color: var(--primary);
-    box-shadow: 0 0 0 4px rgba(107, 18, 33, 0.05);
+    box-shadow: 0 0 0 4px rgba(1, 39, 88, 0.05);
 }
 
 textarea.form-control {
@@ -179,7 +179,7 @@ textarea.form-control {
 .submit-btn:hover {
     background: var(--primary-hover);
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(107, 18, 33, 0.2);
+    box-shadow: 0 10px 30px rgba(1, 39, 88, 0.2);
 }
 
 /* Map Section */

@@ -1,7 +1,7 @@
 /* Department Page Specific Styles */
 .dept-hero {
     height: 350px;
-    background: linear-gradient(rgba(107, 18, 33, 0.85), rgba(107, 18, 33, 0.85)), 
+    background: linear-gradient(rgba(1, 39, 88, 0.85), rgba(1, 39, 88, 0.85)), 
                 url('https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&q=80&w=2000');
     background-size: cover;
     background-position: center;
