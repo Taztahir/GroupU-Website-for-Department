@@ -1,69 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COHED - College of Humanities Education | LASUED University</title>
-    <meta name="description" content="Explore COHED at LASUED. Departments include Fine Arts, History, Music, Religious Studies, and Theatre Arts.">
+    <meta name="description"
+        content="Explore COHED at LASUED. Departments include Fine Arts, History, Music, Religious Studies, and Theatre Arts.">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="CollegeDetail.css">
     <link rel="icon" type="image/x-icon" href="../assets/LasuedLogo.jpg">
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
+
 <body>
     <header class="header">
-        <div class="logo"><svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M3 7v1a3 3 0 0 0 6 0V7"/><path d="M9 7v1a3 3 0 0 0 6 0V7"/><path d="M15 7v1a3 3 0 0 0 6 0V7"/><path d="M19 21v-4a2 2 0 0 1 2-2H3a2 2 0 0 1 2 2v4"/><path d="M2 7h20"/><path d="M12 2 7 7h10L12 2Z"/></svg> LASUED.</div>
+        <div class="logo"><svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 21h18" />
+                <path d="M3 7v1a3 3 0 0 0 6 0V7" />
+                <path d="M9 7v1a3 3 0 0 0 6 0V7" />
+                <path d="M15 7v1a3 3 0 0 0 6 0V7" />
+                <path d="M19 21v-4a2 2 0 0 1 2-2H3a2 2 0 0 1 2 2v4" />
+                <path d="M2 7h20" />
+                <path d="M12 2 7 7h10L12 2Z" />
+            </svg> LASUED.</div>
         <nav class="nav" id="main-nav">
             <a href="../index.html" class="nav-link">Home</a>
-            <div class="nav-item"><a href="About.html" class="nav-link dropdown-toggle">About Us <i data-lucide="chevron-down"></i></a><div class="dropdown-menu"><a href="WhyUs.html" class="dropdown-link"><i data-lucide="help-circle"></i> Why Choose Us</a><a href="Gallery.html" class="dropdown-link"><i data-lucide="image"></i> Full Gallery</a></div></div>
+            <div class="nav-item"><a href="About.html" class="nav-link dropdown-toggle">About Us <i
+                        data-lucide="chevron-down"></i></a>
+                <div class="dropdown-menu"><a href="WhyUs.html" class="dropdown-link"><i data-lucide="help-circle"></i>
+                        Why Choose Us</a><a href="Gallery.html" class="dropdown-link"><i data-lucide="image"></i> Full
+                        Gallery</a></div>
+            </div>
             <a href="Department.html" class="nav-link active">Colleges</a>
-            <a href="Team.html" class="nav-link">Our Team</a>
+            <a href="Team.html" class="nav-link">The Builders</a>
             <a href="ContactUs.html" class="nav-link mobile-only">Contact</a>
         </nav>
-        <div class="header-actions"><a href="ContactUs.html" class="admission-btn"><span>Contact</span><i data-lucide="arrow-up-right" style="width:16px;"></i></a><button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu"><i data-lucide="menu"></i></button></div>
+        <div class="header-actions"><a href="ContactUs.html" class="admission-btn"><span>Contact</span><i
+                    data-lucide="arrow-up-right" style="width:16px;"></i></a><button class="menu-toggle"
+                id="menu-toggle" aria-label="Toggle Menu"><i data-lucide="menu"></i></button></div>
     </header>
     <div class="nav-overlay" id="nav-overlay"></div>
 
     <main>
-        <section class="college-hero" style="background-image:url('https://images.unsplash.com/photo-1544531586-fde5298cdd40?auto=format&fit=crop&q=80&w=2000');">
-            <div class="container"><span class="college-tag">COHED</span><h1>College of Humanities Education</h1><div class="breadcrumbs"><a href="../index.html">Home</a><span style="margin:0 10px;opacity:0.5;">/</span><a href="Department.html">Colleges</a><span style="margin:0 10px;opacity:0.5;">/</span>COHED</div></div>
+        <section class="college-hero"
+            style="background-image:url('https://images.unsplash.com/photo-1544531586-fde5298cdd40?auto=format&fit=crop&q=80&w=2000');">
+            <div class="container"><span class="college-tag">COHED</span>
+                <h1>College of Humanities Education</h1>
+                <div class="breadcrumbs"><a href="../index.html">Home</a><span
+                        style="margin:0 10px;opacity:0.5;">/</span><a href="Department.html">Colleges</a><span
+                        style="margin:0 10px;opacity:0.5;">/</span>COHED</div>
+            </div>
         </section>
 
-        <section class="college-overview"><div class="container"><div class="overview-grid">
-            <div class="overview-content reveal"><h2>Cultivating <span>Culture, Creativity</span> &amp; Critical Thought</h2><p>The College of Humanities Education (COHED) is dedicated to the study of human culture, creative expression, and moral values. Students explore arts, history, religion, and performance — developing cultural literacy essential for educators and creative professionals.</p><p>COHED prepares graduates who can teach, inspire, and lead in fields ranging from fine arts and music to international diplomacy and cultural heritage preservation.</p></div>
-            <div class="overview-image reveal delay-1"><img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80&w=800" alt="Humanities students studying arts"></div>
-        </div></div></section>
-
-        <section class="college-departments"><div class="container">
-            <div class="section-header reveal"><h2>Our Departments</h2><p>Five departments fostering creativity, cultural awareness, and historical understanding.</p></div>
-            <div class="departments-grid">
-                <article class="department-card reveal delay-1"><div class="card-icon"><i data-lucide="palette"></i></div><h3>Fine Arts Education</h3><p>Visual arts, painting, sculpture, graphic design, and art history. Prepares creative educators and professional artists.</p></article>
-                <article class="department-card reveal delay-2"><div class="card-icon"><i data-lucide="scroll-text"></i></div><h3>History &amp; Diplomatic Studies</h3><p>Nigerian and world history, international relations, and diplomacy. Builds analytical skills for governance and scholarship.</p></article>
-                <article class="department-card reveal delay-3"><div class="card-icon"><i data-lucide="music"></i></div><h3>Music Education</h3><p>Music theory, performance, composition, and ethnomusicology. Trains music educators and professional performers.</p></article>
-                <article class="department-card reveal delay-1"><div class="card-icon"><i data-lucide="heart-handshake"></i></div><h3>Religions &amp; Peace Studies</h3><p>Christian Religious Studies, Islamic Studies, and peace-building. Explores moral philosophy, ethics, and interfaith dialogue.</p></article>
-                <article class="department-card reveal delay-2"><div class="card-icon"><i data-lucide="drama"></i></div><h3>Theatre Arts</h3><p>Acting, directing, stagecraft, film production, and dramatic literature. Prepares performers and media professionals.</p></article>
+        <section class="college-overview">
+            <div class="container">
+                <div class="overview-grid">
+                    <div class="overview-content reveal">
+                        <h2>Cultivating <span>Culture, Creativity</span> &amp; Critical Thought</h2>
+                        <p>The College of Humanities Education (COHED) is dedicated to the study of human culture,
+                            creative expression, and moral values. Students explore arts, history, religion, and
+                            performance — developing cultural literacy essential for educators and creative
+                            professionals.</p>
+                        <p>COHED prepares graduates who can teach, inspire, and lead in fields ranging from fine arts
+                            and music to international diplomacy and cultural heritage preservation.</p>
+                    </div>
+                    <div class="overview-image reveal delay-1"><img
+                            src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80&w=800"
+                            alt="Humanities students studying arts"></div>
+                </div>
             </div>
-        </div></section>
+        </section>
 
-        <section class="college-careers"><div class="container">
-            <div class="section-header reveal"><h2>Career Pathways</h2><p>COHED graduates thrive in education, creative industries, diplomacy, and cultural institutions.</p></div>
-            <div class="careers-grid">
-                <div class="career-category reveal delay-1"><h3><i data-lucide="palette"></i> Arts &amp; Culture</h3><ul class="career-list"><li>Museum Curator / Art Gallery Manager</li><li>Professional Artist / Sculptor</li><li>Graphic Designer</li><li>Cultural Heritage Consultant</li></ul></div>
-                <div class="career-category reveal delay-2"><h3><i data-lucide="globe"></i> Diplomacy &amp; Public Service</h3><ul class="career-list"><li>Foreign Service Officer</li><li>International Relations Analyst</li><li>Policy Researcher</li><li>Government Administrator</li></ul></div>
-                <div class="career-category reveal delay-3"><h3><i data-lucide="tv"></i> Media &amp; Entertainment</h3><ul class="career-list"><li>Film Director / Producer</li><li>Professional Musician</li><li>Theatre Practitioner</li><li>Broadcast Journalist</li></ul></div>
-                <div class="career-category reveal delay-1"><h3><i data-lucide="heart-handshake"></i> Religious &amp; Community</h3><ul class="career-list"><li>Chaplain / Religious Leader</li><li>Peace &amp; Conflict Resolution Specialist</li><li>NGO Programme Manager</li><li>Community Development Officer</li></ul></div>
+        <section class="college-departments">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Our Departments</h2>
+                    <p>Five departments fostering creativity, cultural awareness, and historical understanding.</p>
+                </div>
+                <div class="departments-grid">
+                    <article class="department-card reveal delay-1">
+                        <div class="card-icon"><i data-lucide="palette"></i></div>
+                        <h3>Fine Arts Education</h3>
+                        <p>Visual arts, painting, sculpture, graphic design, and art history. Prepares creative
+                            educators and professional artists.</p>
+                    </article>
+                    <article class="department-card reveal delay-2">
+                        <div class="card-icon"><i data-lucide="scroll-text"></i></div>
+                        <h3>History &amp; Diplomatic Studies</h3>
+                        <p>Nigerian and world history, international relations, and diplomacy. Builds analytical skills
+                            for governance and scholarship.</p>
+                    </article>
+                    <article class="department-card reveal delay-3">
+                        <div class="card-icon"><i data-lucide="music"></i></div>
+                        <h3>Music Education</h3>
+                        <p>Music theory, performance, composition, and ethnomusicology. Trains music educators and
+                            professional performers.</p>
+                    </article>
+                    <article class="department-card reveal delay-1">
+                        <div class="card-icon"><i data-lucide="heart-handshake"></i></div>
+                        <h3>Religions &amp; Peace Studies</h3>
+                        <p>Christian Religious Studies, Islamic Studies, and peace-building. Explores moral philosophy,
+                            ethics, and interfaith dialogue.</p>
+                    </article>
+                    <article class="department-card reveal delay-2">
+                        <div class="card-icon"><i data-lucide="drama"></i></div>
+                        <h3>Theatre Arts</h3>
+                        <p>Acting, directing, stagecraft, film production, and dramatic literature. Prepares performers
+                            and media professionals.</p>
+                    </article>
+                </div>
             </div>
-        </div></section>
+        </section>
 
-        <section class="college-cta reveal"><div class="container"><h2>Express Your Creativity</h2><p>Join COHED and build a career that celebrates culture, creativity, and human connection.</p><div class="cta-btn-group"><a href="ContactUs.html" class="cta-btn">Apply Now</a><a href="Department.html" class="cta-btn-outline">View All Colleges</a></div></div></section>
+        <section class="college-careers">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Career Pathways</h2>
+                    <p>COHED graduates thrive in education, creative industries, diplomacy, and cultural institutions.
+                    </p>
+                </div>
+                <div class="careers-grid">
+                    <div class="career-category reveal delay-1">
+                        <h3><i data-lucide="palette"></i> Arts &amp; Culture</h3>
+                        <ul class="career-list">
+                            <li>Museum Curator / Art Gallery Manager</li>
+                            <li>Professional Artist / Sculptor</li>
+                            <li>Graphic Designer</li>
+                            <li>Cultural Heritage Consultant</li>
+                        </ul>
+                    </div>
+                    <div class="career-category reveal delay-2">
+                        <h3><i data-lucide="globe"></i> Diplomacy &amp; Public Service</h3>
+                        <ul class="career-list">
+                            <li>Foreign Service Officer</li>
+                            <li>International Relations Analyst</li>
+                            <li>Policy Researcher</li>
+                            <li>Government Administrator</li>
+                        </ul>
+                    </div>
+                    <div class="career-category reveal delay-3">
+                        <h3><i data-lucide="tv"></i> Media &amp; Entertainment</h3>
+                        <ul class="career-list">
+                            <li>Film Director / Producer</li>
+                            <li>Professional Musician</li>
+                            <li>Theatre Practitioner</li>
+                            <li>Broadcast Journalist</li>
+                        </ul>
+                    </div>
+                    <div class="career-category reveal delay-1">
+                        <h3><i data-lucide="heart-handshake"></i> Religious &amp; Community</h3>
+                        <ul class="career-list">
+                            <li>Chaplain / Religious Leader</li>
+                            <li>Peace &amp; Conflict Resolution Specialist</li>
+                            <li>NGO Programme Manager</li>
+                            <li>Community Development Officer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="college-cta reveal">
+            <div class="container">
+                <h2>Express Your Creativity</h2>
+                <p>Join COHED and build a career that celebrates culture, creativity, and human connection.</p>
+                <div class="cta-btn-group"><a href="ContactUs.html" class="cta-btn">Apply Now</a><a
+                        href="Department.html" class="cta-btn-outline">View All Colleges</a></div>
+            </div>
+        </section>
     </main>
 
-    <footer class="footer"><div class="container"><div class="footer-main">
-        <div class="footer-col brand-col"><div class="footer-logo"><svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M3 7v1a3 3 0 0 0 6 0V7"/><path d="M9 7v1a3 3 0 0 0 6 0V7"/><path d="M15 7v1a3 3 0 0 0 6 0V7"/><path d="M19 21v-4a2 2 0 0 1 2-2H3a2 2 0 0 1 2 2v4"/><path d="M2 7h20"/><path d="M12 2 7 7h10L12 2Z"/></svg><span>LASUED.</span></div><p class="footer-description">Lagos State University of Education is dedicated to fostering academic excellence, innovative research, and the development of future leaders in education.</p></div>
-        <div class="footer-col"><h4 class="footer-heading">Quick Links</h4><ul class="footer-nav-list"><li><a href="../index.html">Home</a></li><li><a href="About.html">About Us</a></li><li><a href="Department.html">Colleges</a></li><li><a href="Gallery.html">Gallery</a></li></ul></div>
-        <div class="footer-col"><h4 class="footer-heading">Contact Us</h4><div class="contact-info-premium"><div class="contact-card"><i data-lucide="map-pin"></i><p>Km 30, Badagry Express Way, Oto/Ijanikin, Lagos</p></div><div class="contact-card"><i data-lucide="phone"></i><p>+234 805 5577 799</p></div><div class="contact-card"><i data-lucide="mail"></i><p>info@lasued.edu.ng</p></div></div></div>
-    </div><div class="footer-bottom-premium"><p class="copyright">&copy; 2026 LASUED. All rights reserved.</p><div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div></div></div></footer>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-col brand-col">
+                    <div class="footer-logo"><svg class="logo-icon" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path d="M3 21h18" />
+                            <path d="M3 7v1a3 3 0 0 0 6 0V7" />
+                            <path d="M9 7v1a3 3 0 0 0 6 0V7" />
+                            <path d="M15 7v1a3 3 0 0 0 6 0V7" />
+                            <path d="M19 21v-4a2 2 0 0 1 2-2H3a2 2 0 0 1 2 2v4" />
+                            <path d="M2 7h20" />
+                            <path d="M12 2 7 7h10L12 2Z" />
+                        </svg><span>LASUED.</span></div>
+                    <p class="footer-description">Lagos State University of Education is dedicated to fostering academic
+                        excellence, innovative research, and the development of future leaders in education.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-nav-list">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="Department.html">Colleges</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Academic</h4>
+                    <ul class="footer-nav-list">
+                        <li><a href="Department.html">Colleges</a></li>
+                        <li><a href="https://admission.lasued.edu.ng/" target="_blank">Admissions</a></li>
+                        <li><a href="https://eportal.lasued.edu.ng/login.php" target="_blank">Student Portal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <div class="contact-info-premium">
+                        <div class="contact-card"><i data-lucide="map-pin"></i>
+                            <p>Km 30, Badagry Express Way, Oto/Ijanikin, Lagos</p>
+                        </div>
+                        <div class="contact-card"><i data-lucide="phone"></i>
+                            <p>+234 805 5577 799</p>
+                        </div>
+                        <div class="contact-card"><i data-lucide="mail"></i>
+                            <p>info@lasued.edu.ng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-premium">
+                <p class="copyright">&copy; 2026 LASUED. All rights reserved.</p>
+                
+            </div>
+        </div>
+    </footer>
     <button class="back-to-top" id="backToTop" aria-label="Back to top"><i data-lucide="arrow-up"></i></button>
     <script src="../script.js"></script>
 </body>
+
 </html>

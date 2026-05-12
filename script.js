@@ -97,26 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Contact Form Handling
-    const contactForm = document.getElementById('contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const submitBtn = contactForm.querySelector('.submit-btn');
-            const originalText = submitBtn.innerHTML;
-            
-            // Simulate sending
-            submitBtn.innerHTML = 'Sending...';
-            submitBtn.disabled = true;
-            
-            setTimeout(() => {
-                alert('Thank you for your message! We will get back to you soon.');
-                submitBtn.innerHTML = originalText;
-                submitBtn.disabled = false;
-                contactForm.reset();
-            }, 1500);
-        });
-    }
+
 
     // Initialize Lucide icons on page load
     if (typeof lucide !== 'undefined') {

@@ -1,9 +1,9 @@
 /* Contact Page Specific Styles */
 .contact-hero {
     height: 350px;
-    background: 
+    background:
         linear-gradient(rgba(1, 39, 88, 0.85), rgba(1, 39, 88, 0.92)),
-        url('../assets/contact_hero.png');
+        url('../assets/GalleryImage2.jpeg');
     background-size: cover;
     background-position: center;
     display: flex;

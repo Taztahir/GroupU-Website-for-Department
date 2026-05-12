@@ -319,8 +319,8 @@ img {
     min-height: calc(100vh - 90px);
     position: relative;
     background-image:
-        linear-gradient(to right, rgba(15, 17, 21, 0.95) 0%, rgba(15, 17, 21, 0.45) 100%),
-        url('./assets/Herobg.png');
+        linear-gradient(to right, rgba(15, 17, 21, 0.95) 10%, rgba(15, 17, 21, 0.45) 30%),
+        url('./assets/LasuedGate.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

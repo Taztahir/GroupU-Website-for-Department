@@ -339,25 +339,29 @@
     margin-bottom: 40px;
 }
 
+
 .wu-cta-btn {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
-    background: white;
-    color: var(--primary);
+    gap: 12px;
+    background: var(--primary);
+    color: white;
     padding: 18px 40px;
-    border-radius: 50px;
+    font-size: 14px;
     font-weight: 700;
-    font-size: 15px;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
+    width: fit-content;
+    box-shadow: 0 10px 30px rgba(1, 39, 88, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: var(--transition);
     text-decoration: none;
 }
 
 .wu-cta-btn:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+    background: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 15px 40px rgba(1, 39, 88, 0.3);
+    border-color: white;
 }
 
 .wu-cta-btn i {
